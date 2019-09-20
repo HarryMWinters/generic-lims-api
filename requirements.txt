@@ -1,0 +1,4 @@
+djongo == 1.2.36
+djangorestframework
+markdown
+django-filter 
