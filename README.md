@@ -2,6 +2,22 @@
 
 Generic backend implementation exposing REST API with auth and state storage via mongoDB.
 
+## User Actions
+
+# Data Creation
+
+- Register a mouse
+- Collect a tissue sample
+- Extract DNA from a tissue sample
+- Amplify extracted DNA
+- Run gel of amplified DNA
+- Image gel (and have image data determine mouse genotype)
+
+# Data Retrieval
+
+- Find mouse genotype
+- Trace genotyping workflow for single mouse
+
 ## Fun in a Shell
 
 ```
