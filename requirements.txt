@@ -1,4 +1,4 @@
-djongo == 1.2.36
+Django
 djangorestframework
 markdown
 django-filter 
