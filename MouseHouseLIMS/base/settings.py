@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = "backend.Researcher"
 
 # Application definition
 
@@ -37,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'backend.apps.BackendConfig',
+    'GraphQL_API.apps.GraphqlApiConfig',
+    'REST_API.apps.RestApiConfig'
+
 ]
 
 MIDDLEWARE = [
