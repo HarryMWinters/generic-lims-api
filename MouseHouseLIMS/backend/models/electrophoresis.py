@@ -1,6 +1,7 @@
 from django.db import models
 import pcr_reaction
 import protocol
+import mouse
 
 
 class Electrophoresis(models.Model):
@@ -14,3 +15,5 @@ class Electrophoresis(models.Model):
     electrophoresis_protocol = models.ForeignKey(
         protocol.ElectrophoresisProtocol, on_delete=models.PROTECT
     )
+    mouse = models.ForeignKey(
+        mouse.Mouse, null=False, on_delete=models.PROTECT)

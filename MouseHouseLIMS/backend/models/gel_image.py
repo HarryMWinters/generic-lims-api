@@ -9,6 +9,8 @@ class GelImage(models.Model):
     """
     uuid = models.UUIDField(primary_key=True, unique=True,
                             null=True, auto_created=True)
+    mouse = models.ForeignKey(
+        mouse.Mouse, null=False, on_delete=models.PROTECT)
     electrophoresis = models.ForeignKey(
         electrophoresis.Electrophoresis, on_delete=models.PROTECT)
     imaging_protocol = models.ForeignKey(
